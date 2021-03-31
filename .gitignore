@@ -16,7 +16,7 @@ build
 .env.test.local
 .env.production.local
 .env
-.tar
+*.tar
 
 npm-debug.log*
 yarn-debug.log*
