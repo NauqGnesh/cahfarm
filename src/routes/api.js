@@ -18,7 +18,7 @@ const start = async (req, res) => {
     // longPoll server to keep connection alive
     connectionaInterval = listener.keepConnectionAlive()
 
-    const fiveMinutes = 2 * 60 * 1000
+    const fiveMinutes = 5 * 60 * 1000
     gameListenerInterval = setInterval(async () => {
         // garbage collect inactive game listeners
         try {
