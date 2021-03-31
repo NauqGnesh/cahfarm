@@ -43,6 +43,7 @@ const stop = async (req, res) => {
         listener.terminateAll()
         clearInterval(connectionaInterval)
         clearInterval(gameListenerInterval)
+        res.send('All processes terminated')
     } catch (ex) {
         console.log(ex)
         res.send('No ongoing processes')
